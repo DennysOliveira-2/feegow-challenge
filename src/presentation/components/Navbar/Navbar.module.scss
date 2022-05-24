@@ -1,0 +1,36 @@
+@import "../../../variables.scss";
+
+.navbar{
+	background-color: $white-1
+}
+
+
+.navbarBtns *{
+	text-decoration: none;
+	color: $gray-2;
+}
+
+.navbarItem{
+	border-bottom: 3px solid transparent;
+	transition: border-bottom 200ms ease-in-out;
+	display: flex;
+
+	margin-right: 2rem;
+	margin-left: 1rem;
+
+	&:hover {
+		border-bottom-color: $white-2;
+
+		* {
+			color: $gray-1;
+		}
+	}
+
+}
+
+
+a {
+	&:hover{
+		cursor: pointer;
+	}
+}

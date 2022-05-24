@@ -1,0 +1,42 @@
+@import "../../../variables.scss";
+
+.container {
+	background-color: $white;
+	padding: 1rem;
+		
+	max-width: 100%!important;
+
+	margin: 0;
+	
+
+	.childrenContainer {
+		background-color: $white;
+		padding-bottom: 2rem;
+		
+		box-shadow: 0px 2px 5px $white-2;
+
+		
+		p {
+			color: black;
+			font-weight: normal;
+			margin: 0.2rem;			
+		}
+
+		h3, h4 {
+
+			margin: 0;
+			margin-top: 1rem;
+		}
+
+		.method {
+			color: $healthy-blue;
+
+		}
+		
+		code {
+			color: $healthy-blue;
+		}
+	}
+
+}	
+

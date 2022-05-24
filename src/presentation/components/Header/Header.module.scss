@@ -1,0 +1,33 @@
+@import "../../../variables.scss";
+
+.header {
+  background-color: $white;
+  box-shadow: 0px 2px 5px $white-2;
+
+  height: 6rem;
+  
+  * {
+    align-items: center;
+    
+    text-decoration: none;
+  } 
+  
+  h2 {
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: $healthy-blue;
+
+    margin: 0;
+    margin-left: 1rem;
+    padding: 0;
+
+    border-radius: 1rem;
+
+    &:hover {
+      transition: color 200ms ease-in-out;      
+      color: $gray-2;
+
+    }
+  }
+}
+

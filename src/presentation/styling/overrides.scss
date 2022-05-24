@@ -1,0 +1,15 @@
+@import "../../variables";
+
+.btn-primary {
+  background-color: $healthy-blue!important;
+  border-color: $healthy-blue!important;
+
+  &:hover,&:active,&:focus{
+    background-color: $healthy-blue-2!important;
+    border-color: $healthy-blue-2!important;
+  }
+  
+  &:focus,&:focus:active{
+    box-shadow: $gray-2;
+  }
+}
