@@ -1,7 +1,6 @@
 import Header from "../Header";
 import styles from "./Layout.module.scss";
 import { Container } from "react-bootstrap";
-import Navbar from "../Navbar";
 
 interface ILayoutProps {
   children: any;

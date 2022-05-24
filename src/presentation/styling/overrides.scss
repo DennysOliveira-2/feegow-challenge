@@ -13,3 +13,18 @@
     box-shadow: $gray-2;
   }
 }
+.btn-secondary {
+  background-color: $white-2!important;
+  border-color: $white-2!important;
+
+  &:hover,&:active,&:focus{
+    background-color: $gray-1!important;
+    border-color: $gray-1!important;
+  }
+  
+  &:focus,&:focus:active{
+    box-shadow: $gray-2;
+  }
+}
+
+

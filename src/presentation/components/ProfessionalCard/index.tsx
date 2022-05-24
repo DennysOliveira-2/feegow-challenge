@@ -47,7 +47,7 @@ export default function ProfessionalCard(props: IProps) {
         </Col>
       </Row>
       <Row className="">
-        <Separator padding={"mt-4"} margin={"mb-4"} />
+        <Separator classes="mt-4 mb-4" />
       </Row>
       <Row>
         <Col sm={"auto"}>

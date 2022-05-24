@@ -5,7 +5,6 @@ import { Button } from "react-bootstrap/";
 import useFetch from "../../../implementation/hooks/UseFetch";
 import Separator from "../../components/Helpers/Separator";
 import Layout from "../../components/Layout";
-import ProfessionalCard from "../../components/ProfessionalCard";
 import ProfessionalCardGroup from "../../components/ProfessionalCardGroup";
 import IProfessional from "../../domain/entities/Professional";
 import ISpecialty from "../../domain/entities/Specialty";
@@ -23,12 +22,24 @@ interface IFormValues {
 }
 
 export default function Home() {
+  document.title = "Home | Sua Clínica";
   const [formValues, setFormValues] = useState<IFormValues>({
     specialtyId: 0,
   });
   const [hidden, setHidden] = useState<boolean>(true);
   const [specialty, setSpecialty] = useState<number>(0);
-  const [professional, setProfessional] = useState<IProfessional | null>(null);
+  const [professional, setProfessional] = useState<IProfessional>({
+    profissional_id: 0,
+    nome: "",
+    tratamento: "",
+    rqe: "",
+    conselho: "",
+    uf_conselho: "",
+    documento_conselho: "",
+    foto: "",
+    sexo: "",
+    especialidades: [],
+  });
   const [modalVisible, setModalVisibility] = useState<boolean>(false);
 
   const {
@@ -47,6 +58,7 @@ export default function Home() {
   };
 
   const handleSubmit = () => {
+    // e.preventDefault();
     setSpecialty(formValues.specialtyId);
     setHidden(false);
   };
@@ -62,6 +74,7 @@ export default function Home() {
         professional={professional}
         specialtyId={specialty}
         isVisible={modalVisible}
+        setVisibility={setModalVisibility}
       />
 
       <Container className={styles.container}>
@@ -79,12 +92,13 @@ export default function Home() {
             <p>
               Consiste em uma aplicação <i>Web</i> que permite verificar as
               especialidades disponíveis, selecionar o profissional de interesse
-              e agendar sua consulta, assim como visualizar seus agendamentos.
+              e agendar sua consulta, assim como visualizar seus agendamentos e
+              excluí-los.
             </p>
             <p>
-              Não há autenticação para este <i>mock</i>, portanto os
+              Não há persistência de dados para este <i>mock</i>, portanto os
               agendamentos do usuário ficarão salvos no <i>SessionStorage</i>{" "}
-              temporáriamente.
+              temporariamente durante a sessão.
             </p>
 
             <p className="mt-4">Retorna uma lista de Especialidades</p>
@@ -120,7 +134,7 @@ export default function Home() {
           </Col>
         </Row>
         <Row>
-          <Separator padding={"mt-5"} margin={"mb-3"} />
+          <Separator classes="mt-4 mb-4" />
         </Row>
         <Row>
           <Col>
@@ -154,7 +168,7 @@ export default function Home() {
                 </Form.Group>
               </Col>
               <Col>
-                <Button onClick={handleSubmit}>Agendar</Button>
+                <Button onClick={handleSubmit}>Buscar</Button>
               </Col>
             </Row>
           </>

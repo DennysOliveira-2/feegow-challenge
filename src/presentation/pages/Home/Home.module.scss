@@ -2,6 +2,9 @@
 
 .container {
 	
+	padding-top: 0.5rem;
+	padding-bottom: 1rem;
+
 	.btnPrimary {
 		background-color: red;
 	}
@@ -9,15 +12,11 @@
 	button.btnSecondary {
 		background-color: red;
 	}
-
-	padding-top: 0.5rem;
-	padding-bottom: 1rem;
 	p {
 		color: $gray-2;
 		font-weight: normal;
 		padding-bottom: 0rem;
  	}
-
 
  h2 {
 	 padding-bottom: 0;
@@ -30,9 +29,6 @@
 		filter: drop-shadow(6px 3px 3px rgba(0, 0, 0, 0.2));
 	}
 }
-
-
-
 
 .titleP {
 	margin-top: 1rem;

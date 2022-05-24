@@ -47,7 +47,7 @@ export default function ProfessionalCardGroup(props: IProps) {
       <>
         <Col>
           <Row>
-            <Separator padding={"mt-5"} margin={"mb-3"} />
+            <Separator classes="mt-4 mb-4" />
           </Row>
           <Row>
             <h4 className="mt-4 mb-3">

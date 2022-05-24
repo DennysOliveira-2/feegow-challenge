@@ -5,6 +5,7 @@ import "./presentation/styling/loading.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.module.scss";
 import "./presentation/styling/overrides.scss";
+import "react-toastify/dist/ReactToastify.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

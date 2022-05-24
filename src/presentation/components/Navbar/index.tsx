@@ -10,7 +10,7 @@ export default function Navbar() {
         <Link to="/">INÍCIO</Link>
       </NavItem>
       <NavItem className={styles.navbarItem}>
-        <Link to="/listings">MEUS AGENDAMENTOS</Link>
+        <Link to="/appointments">MEUS AGENDAMENTOS</Link>
       </NavItem>
     </Nav>
   );

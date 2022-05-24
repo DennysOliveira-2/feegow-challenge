@@ -1,12 +1,9 @@
 @import "../../../variables.scss";
 
-.container {
-	background-color: $white;
+.container {	
 	padding: 1rem;
-		
 	max-width: 100%!important;
-
-	margin: 0;
+	max-height: 100%!important;
 	
 
 	.childrenContainer {
@@ -14,7 +11,6 @@
 		padding-bottom: 2rem;
 		
 		box-shadow: 0px 2px 5px $white-2;
-
 		
 		p {
 			color: black;
@@ -23,9 +19,9 @@
 		}
 
 		h3, h4 {
-
 			margin: 0;
 			margin-top: 1rem;
+			margin-bottom: 1rem;
 		}
 
 		.method {
