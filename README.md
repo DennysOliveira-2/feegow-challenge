@@ -1,46 +1,74 @@
-# Getting Started with Create React App
+# Feegow Challenge for Front-end Development
+![GitHub Repo size](https://img.shields.io/github/repo-size/bardsnight/feegow-challenge?style=flat-square)
+![GitHub Languages](https://img.shields.io/github/languages/count/bardsnight/feegow-challenge?style=flat-square)
+![License](https://img.shields.io/github/license/bardsnight/feegow-challenge?style=flat-square)
+> This was a project created for Feegow Challenge. 
+> <br> Aimed to mock a functioning user interface with some prerequesites using their public mock API.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://feegow-challenge.herokuapp.com/
 
-## Available Scripts
+<!--ts-->
+   * [Features](#Features)
+   * [Requirements](#Requirements)
+   * [Installation](#Installation)
+   * [Usage](#Usage)
+   * [Dependencies](#Dependencies)
+   * [Contributors](#Contributors)     
+   * [License](#License)   
+<!--te-->
 
-In the project directory, you can run:
+## Features
+- Search specialists by Specialty
+- Create a new Appointment with a specialist of choice
+- View your appointments
+- Delete your appointments
 
-### `npm start`
+## Requirements
+- NodeJS v16.15.0 (not tested with older versions)
+- NPM
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
+1. Clone this repository 
+`$ git clone git@github.com:bardsnight/feegow-challenge.git`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. Run NPM Install at the root of the project folder
+`$ npm install`
 
-### `npm test`
+3. Run development server for preview
+`$ npm run start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Dependencies
+> You can find dependencies better discriminated on `package.json` file.
+- Express
+- Node
+- React
+- React Bootstrap
+- Axios
+- React Toastify
 
-### `npm run build`
+Development Dependencies and Development Tools
+- Typescript
+- SASS
+- ESLint
+- Prettier
+- Commitizen + Conventional Changelogs
+- Postman
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Author
+<a href="https://github.com/bardsnight/">
+<img style="border-radius: 5px;" src="https://avatars.githubusercontent.com/u/51341598?s=400&u=9431c2dc6cbc497de03fdda80330fcc45a9c4fa9&v=4" width="70px" alt="Author Profile Picture"/>
+<br><b>Dennys Marcos</b>
+</a>
 
-### `npm run eject`
+Made with lots of ☕.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[![Linkedin Badge](https://img.shields.io/badge/Linkedin-2B2D2E?style=flat&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/dennysm/)
+[![Mail Badge](https://img.shields.io/badge/Mail-me@dennys.dev-2B2D2E?style=flat&logo=minutemailer&logoColor=white&labelColor=101010)](mailto:me@dennys.dev)
+[![Whatsapp Badge](https://img.shields.io/badge/+55%2012%2099782%201301-2B2D2E?style=flat&logo=whatsapp&logoColor=white&labelColor=101010)](https://wa.me/5512997821301)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
+This project is licensed under the terms of the MIT license. Check the file [license](LICENSE) for deteails.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[⬆ Go to the top](#RSA-cryptography-authentication-Proof-of-Concept)
